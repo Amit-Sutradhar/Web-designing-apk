@@ -8,7 +8,7 @@
 
     4--<body> Section: Contains the visible content of the webpage.
 
-5--Headings: Various heading levels <h1> to <h4> are used to define hierarchical headings.
+    5--Headings: Various heading levels <h1> to <h4> are used to define hierarchical headings.
 
     6--Horizontal Line: The <hr> tag adds a horizontal line for visual separation.
 
