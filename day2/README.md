@@ -6,4 +6,4 @@ Videos (<video>): Videos are embedded using the <video> tag. The src attribute s
 -----------------
 <iframe> Tags: The <iframe> tags are used to embed external content. One embeds a YouTube video, and the other embeds a GitHub page.
 --------------------
-Tables (<table>, <thead>, <tbody>, <tfoot>, <th>, <td>): A table is created with headers (<th>), data cells (<td>), and footer cells (<tfoot>). The colspan attribute in the footer cell merges columns.
+<!--Tables (<table>, <thead>, <tbody>, <tfoot>, <th>, <td>): A table is created with headers (<th>), data cells (<td>), and footer cells (<tfoot>). The colspan attribute in the footer cell merges columns.
