@@ -1,0 +1,66 @@
+<!-- This is an HTML document with the language set to English -->
+<html lang="en">
+<head>
+    <!-- This meta tag specifies the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- This meta tag sets the initial scale and viewport width for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title of the webpage that will be displayed in the browser tab -->
+    <title>Payment Form</title>
+</head>
+<body>
+    <!-- This is the main heading of the webpage -->
+    <h1>Payment Form</h1>
+    <!-- This is a secondary heading for the contact information section -->
+    <h2>Contact Information</h2>
+    <!-- This is the start of a form -->
+    <form action="">
+        <!-- This paragraph contains a label and a required input field for the user's name -->
+        <p>Name * : <input type="text" name="name" required></p>
+        <!-- This paragraph contains a label and an input field for the user's college name -->
+        <p>College Name: <input type="text" name="college_name"></p>
+       
+        <!-- This is a fieldset containing a legend for grouping radio buttons for gender -->
+        <fieldset>
+            <legend>gender</legend>
+            <!-- This paragraph contains a radio button for selecting "Male" -->
+            <p>Male <input type="radio" name="gender" id="Male"></p>
+            <!-- This paragraph contains a radio button for selecting "Female" -->
+            <p>Female <input type="radio" id="Female" name="gender"></p>
+        </fieldset>
+
+        <!-- This paragraph contains a label and a textarea for entering the user's address -->
+        <p>Address: <textarea name="address" id="Address" cols="40" rows="5"></textarea></p>
+        <!-- This paragraph contains a label and an input field for the user's email -->
+        <p>Email: <input type="email" name="email" id="email"></p>
+        <!-- This paragraph contains a label and an input field for the user's pin code -->
+        <p>Pincode <input type="number" id="pincode" name="pincode"></p>
+
+        <!-- This horizontal line visually separates the sections -->
+        <hr>
+
+        <!-- This is a subheading for the card information section -->
+        <h3>Card Type:</h3>
+
+        <!-- This paragraph contains a label and a dropdown menu for selecting the card type -->
+        <p>Card Type
+            <select name="card_type" id="Card_Type">
+                <option value="">--Select Card Type--</option>
+                <option value="Visa">Visa</option>
+                <option value="master">Master</option>
+                <option value="Rupay">Rupay</option>
+            </select>
+        </p>
+
+        <!-- This paragraph contains a label and an input field for entering the card number -->
+        <p>Card Number <input type="number" name="card_number" id="card_number"></p>
+        <!-- This paragraph contains a label and an input field for entering the card's expiration date -->
+        <p>Expiration Date <input type="date" id="card_exp_date" name="card_exp_date"></p> 
+        <!-- This paragraph contains a label and an input field for entering the CVV number -->
+        <p>CVV <input type="password" name="cvv_password" id="cvv_password"></p>
+        
+        <!-- This paragraph contains a submit button for the form -->
+        <p><input type="submit" value="Pay Now"></p>
+    </form> 
+</body>
+</html>
