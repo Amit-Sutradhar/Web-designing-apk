@@ -9,6 +9,7 @@ exp
     <!-- form elements go here -->
     </form>
 
+--------------------------
         
 2--<input>👉🏻 Tag - Input Fields:
 The <input> tag is used to create various types of input fields. The type attribute determines the type of input field, such as text, password, radio, etc.
