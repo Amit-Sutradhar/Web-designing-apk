@@ -1,5 +1,4 @@
 
-
 web Form--
 
 1--<form> Tag: The <form> tag defines an HTML form that is used to collect user input. The "action" attribute specifies the URL to which the form data should be sent when the form is submitted. In this case, the attribute is left empty, so the form data won't be sent anywhere (it's often used for demonstration purposes).
