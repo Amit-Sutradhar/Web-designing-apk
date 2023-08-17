@@ -1,5 +1,6 @@
 Links (<a>): 
-<!--These links direct users to different pages and external websites. The target="_blank" attribute in the Google Maps link opens the link in a new tab.
+
+    !--These links direct users to different pages and external websites. The target="_blank" attribute in the Google Maps link opens the link in a new tab.
 ------------->
 
 
