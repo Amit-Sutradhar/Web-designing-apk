@@ -14,8 +14,8 @@
 
 7--Paragraph with Formatting: The <p> tag defines a paragraph. Within the paragraph, various tags like <b>, <i>, <small>, <sup>, and <sub> are used to format text.
 
-8--Unordered List: The <ul> tag creates an unordered (bullet) list. Nested lists are also used within list items.
+    8--Unordered List: The <ul> tag creates an unordered (bullet) list. Nested lists are also used within list items.
 
 9--Ordered List: The <ol> tag creates an ordered (numbered) list. The type="A" attribute is used to change the numbering style to uppercase letters.
 
-10--Hyperlink: The <a> tag creates a hyperlink. It links to a YouTube video and is placed within a paragraph. A separate <h1> heading is added.
+    10--Hyperlink: The <a> tag creates a hyperlink. It links to a YouTube video and is placed within a paragraph. A separate <h1> heading is added.
