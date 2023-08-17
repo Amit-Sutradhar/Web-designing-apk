@@ -3,15 +3,12 @@
 1--Document Type Declaration: <!DOCTYPE html> indicates that the document is written in HTML5.
 
     2--<html> Tag: The root element of the HTML document.
-
 3--<head> Section: Contains metadata about the document, such as the character encoding, viewport settings, and the title of the webpage.
 
     4--<body> Section: Contains the visible content of the webpage.
-
 5--Headings: Various heading levels , h1 & h2  are used to define hierarchical headings.
 
     6--Horizontal Line: The <hr> tag adds a horizontal line for visual separation.
-
 7--Paragraph with Formatting: The <p> tag defines a paragraph. Within the paragraph, various tags like <b>, <i>, <small>, <sup>, and <sub> are used to format text.
 
     8--Unordered List: The <ul> tag creates an unordered (bullet) list. Nested lists are also used within list items.
