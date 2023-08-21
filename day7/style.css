@@ -1,0 +1,12 @@
+table,tr,th, td{
+
+    border: 2px solid black; 
+    padding: 20px;
+    border-spacing: 100px;
+    border-collapse: collapse; /*if you remove it then you can find another ty of table deferent box table*/
+}
+
+tr{ background-color: rgb(254, 128, 39);}
+
+td
+{background-color: rgb(124, 226, 56);}
