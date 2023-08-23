@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Concepts</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Inline CSS */
+        body {
+            font-family: Arial, sans-serif; /* Set default font for the entire page */
+            background-color: #f0f0f0; /* Set background color for the page */
+        }
+
+        /* Specificity and Cascading */
+        .bff {
+            color: blueviolet; /* Set text color for elements with class "bff" */
+            font-weight: bold; /* Set font weight for elements with class "bff" */
+        }
+
+        /* Tag Selector */
+        ul li {
+            font-size: 16px; /* Set default font size for all list items */
+            color: brown; /* Set default text color for all list items */
+            font-weight: normal; /* Reset font weight for list items */
+            margin: 5px 0; /* Set margin around each list item */
+        }
+
+        /* ID Selector */
+        #my-friends li {
+            font-size: 14px; /* Override font size for list items under element with ID "my-friends" */
+            color: darkgreen; /* Override text color for list items under element with ID "my-friends" */
+            text-transform: uppercase; /* Transform text to uppercase */
+            list-style: none; /* Remove default list bullets */
+        }
+
+        /* Combined Selector */
+        ul#my-friends .bff {
+            color: coral; /* Override text color for elements with both class "bff" and under ID "my-friends" */
+            font-weight: normal; /* Reset font weight for specific class in specific context */
+        }
+
+        /* Overflow Example */
+        .overflow-box {
+            width: 200px;
+            height: 100px;
+            border: 1px solid #ccc;
+            overflow: scroll; /* Show scrollbars when content overflows */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Concepts Example</h1>
+    <ul id="my-friends">
+        <li>Amit</li>
+        <li class="bff">Ramu</li> <!-- Inherits properties from both .bff and #my-friends .bff -->
+        <li>Siju</li>
+        <li>Dipu</li>
+    </ul>
+
+    <p>This is an example of the <strong>overflow</strong> property:</p>
+    <div class="overflow-box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac dui aliquet, feugiat felis eu, fringilla elit.</p>
+    </div>
+</body>
+</html>
