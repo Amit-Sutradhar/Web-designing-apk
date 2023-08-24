@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    /* Ensures that padding and border are included in the element's total width and height. */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 40px; 
+    font-size: 20px; 
+    padding: 8px; 
+    /* Sets the font, margin, font size, and padding for the entire body. */
+}
+
+.container {
+    background-color: rgb(245, 198, 27);
+    padding: 5px 20px 15px 20px;
+    border: 5px solid rgb(189, 158, 0); 
+    border-radius: 40px; 
+    /* Defines styles for a container element, including background color, padding, border, and border radius. */
+}
+
+.main_heading {
+    text-align: center;
+    /* Centers the text inside elements with the class "main_heading". */
+}
+
+/* Styling for various input and form elements */
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="password"], /* Note: "passward" typo corrected to "password" */
+select,
+textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 2px solid rgb(88, 88, 88);
+    border-radius: 30px; 
+    margin: 10px; 
+    /* Styles common form elements: text, number, email, date, password, select, and textarea. */
+    /* Sets their width, padding, border, border radius, and margin. */
+}
+
+fieldset {
+    border-radius: 20px;
+    border: 2px solid rgb(154, 147, 101);
+    /* Styles for a fieldset, which is used to group related form elements. */
+    /* Sets border radius and border properties. */
+}
+
+input[type="submit"] {
+    background-color: rgba(226, 38, 38, 0.431);
+    padding: 10px 30px;
+    border: 2px solid rgb(141, 152, 140);
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    /* Styles for a submit button in a form. */
+    /* Defines background color, padding, border, border radius, cursor, and width. */
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(107, 201, 0, 0.962);
+    /* Styles the submit button when hovered over with the mouse. */
+}
+
+
+
+
+/*
+
+1. `* { box-sizing: border-box; }`:
+   - The `box-sizing` property is used to control how the width and height of an element are calculated.
+   - `border-box` includes padding and border in the element's total width and height, ensuring that the specified dimensions don't change due to padding or border.
+
+2. `body { ... }`:
+   - Sets styles for the entire document's body, including font, margin, font size, and padding.
+   - This rule establishes a consistent look for text content throughout the webpage.
+
+3. `.container { ... }`:
+   - Styles a container element, which may be used to group content together.
+   - Sets a background color, padding, border, and border radius, creating a visually distinct section on the webpage.
+
+4. `.main_heading { ... }`:
+   - Centers the text alignment of elements with the class `main_heading`.
+   - Useful for visually centering important headings or titles on the page.
+
+5. Styling for various input and form elements (e.g., `input[type="text"], ... textarea { ... }`):
+   - Sets a consistent style for various form elements like text inputs, number inputs, email inputs, date inputs, passwords, selects, and textareas.
+   - Defines a consistent width, padding, border, and border radius for these elements, ensuring a uniform appearance and user experience.
+
+6. `fieldset { ... }`:
+   - Styles the fieldset element, which is often used to group related form elements.
+   - Adds a border radius and border to visually distinguish and organize the grouped form elements.
+
+7. `input[type="submit"] { ... }`:
+   - Defines the appearance of a submit button in a form.
+   - Sets a background color, padding, border, border radius, cursor, and width for the button.
+   - The button is designed to have a distinctive appearance that indicates it can be clicked to submit a form.
+
+8. `input[type="submit"]:hover { ... }`:
+   - Styles the submit button when it's hovered over with the mouse.
+   - Changes the background color to give visual feedback to the user when the button is interactive.
+
+Overall, this CSS code aims to create a consistent and visually appealing design for a web form. It establishes a clear structure for various form elements and ensures that they are easy to use and interact with. The use of classes and element selectors helps in maintaining a cohesive design throughout the webpage.
+
+
+*/

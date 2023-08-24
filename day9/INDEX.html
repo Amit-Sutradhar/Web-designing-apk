@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+     <div class="container">
+
+    <form action="" method="get">
+        <h1 class="main_heading">Payment form</h1>
+
+        <hr>
+        <h2>Contact Information</h2>
+        <p>Name: <input type="text" name="Name" required  placeholder="Enter your name">  </p>
+       
+        <fieldset>
+            <legend>Gender</legend>
+            <!-- The <fieldset> element is used to group related form elements together. It creates a visual box around the grouped elements. -->
+        
+            <p>
+                Male <input type="radio" name="gender" id="male">
+                <!-- <input type="radio"> creates a radio button input. Radio buttons allow users to select a single option from a list. -->
+                <!-- 'name' attribute is used to group radio buttons together, allowing only one to be selected within the same group. -->
+                <!-- 'id' attribute uniquely identifies the input element. -->
+        
+                Female <input type="radio" name="gender" id="female">
+                <!-- Similar radio button for the "Female" option. -->
+        
+                <!-- These radio buttons are used to represent the gender selection options. -->
+            </p>
+        </fieldset>
+        
+
+
+        <p> Address: <textarea name="address" id="address" cols="60" rows="7" placeholder="Enter Your Address"></textarea></p>
+        <!-- The <textarea> element is used to create a multi-line text input field. -->
+        
+        <p>Email:  <input type="email" name="email" id="email" required placeholder="abc@gmail.com"></p>
+        <!-- The <input> element with type="email" is used for single-line email input fields. and/// placeholder="abc@gmail.com its also use to desplay the vartual to youser that what type of text is use on that box -->
+        
+        <p>Pincode: <input type="number" id="pincode" name="pincode" placeholder="PinCode"></p>
+        <!-- The <input> element with type="number" is used for single-line numeric input fields. -->
+        
+
+             <hr>
+
+             <h2>Payment Information </h2>
+
+             <p>Crd Type: 
+                <select name="card_type" id="card_type">
+                    <option value="">---select the card type---</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="Master">Master</option>
+                </select>
+             </p>
+
+             <p>Card Number: *
+                <input type="number" id="cadr_number" name="cadr_number" required placeholder="card number">
+             </p>
+
+             <p>Expairy date:*
+                <input type="date" id="exp_date" name="exp_date" required> </p>
+
+            <p>CVV: *
+                <input type="password" id="cvv" name="password" required placeholder="Enter CVV">  
+            </p>
+
+            <input type="submit" value="Pay Now">
+
+          </fieldset>
+
+    
+    </form>
+
+
+
+
+</div>
+
+    
+</body>
+</html>
+
+
+<!--The <fieldset> element is used to group related form elements together, creating a visual container or box around them. In this case, it's being used to group the radio buttons that represent gender choices.
+
+The <legend> element inside the <fieldset> provides a title or heading for the grouped elements. In this case, it's displaying the text "Gender" as the title of the fieldset.
+
+The <p> element is a paragraph element that contains the radio buttons and their corresponding labels.
+
+The first radio button is labeled "Male" and is created using the <input type="radio"> element. The name attribute is set to "gender" for both radio buttons, indicating that they belong to the same group and users can only select one option from the group.
+
+The second radio button is labeled "Female" and functions similarly to the first radio button.
+
+The id attributes of the radio buttons ("male" and "female") are used for unique identification. This can be useful for associating labels with the input elements using the for attribute in <label> elements.
+
+Overall, this code snippet demonstrates how to create a gender selection section within a form using the <fieldset> element to group the related radio buttons and the <legend> element to provide a title for the fieldset.
+    
+
+
+
+<h2> Element:
+
+Creates a level 2 heading with the text "Payment Information".
+This heading indicates the start of the payment information section.
+
+
+<select> Element:
+
+Creates a dropdown menu for selecting the type of credit card.
+The name attribute is set to "card_type", which will be used as the name when the form data is submitted.
+The id attribute is set to "card_type", providing a unique identifier for the element.
+Several <option> elements are nested within the <select> element to provide available card type options.
+The first option is a default option that prompts users to select a card type.
+
+
+<input type="number"> Element:
+
+Creates an input field for entering the card number.
+The type attribute is set to "number" to allow only numeric input.
+The id attribute is set to "cadr_number", providing a unique identifier for the element.
+The name attribute is set to "cadr_number", which will be used as the name when the form data is submitted.
+The required attribute specifies that this field must be filled out before the form can be submitted.
+The placeholder attribute provides a hint ("card number") inside the input field.
+
+
+<input type="date"> Element:
+
+Creates an input field for entering the card's expiry date.
+The type attribute is set to "date" to enable users to select a date.
+The id attribute is set to "exp_date", providing a unique identifier for the element.
+The name attribute is set to "exp_date", which will be used as the name when the form data is submitted.
+The required attribute specifies that this field must be filled out before the form can be submitted.
+
+
+<input type="password"> Element:
+
+Creates a password input field for entering the CVV code.
+The type attribute is set to "password" to hide the entered characters.
+The id attribute is set to "cvv", providing a unique identifier for the element.
+The name attribute is set to "password", which will be used as the name when the form data is submitted.
+The required attribute specifies that this field must be filled out before the form can be submitted.
+The placeholder attribute provides a hint ("Enter CVV") inside the input field.
+
+
+<input type="submit"> Element:
+
+Creates a submit button that users can click to submit the payment information.
+The value attribute is set to "Pay Now", which sets the text displayed on the button.-->
