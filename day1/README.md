@@ -10,7 +10,7 @@
 
 <body>
     <h1>This is day 9 project </h1>
-    <img src="ss_d1.png" alt="ss of day 1" width="50%">
+    <img src="ss_d1.png" alt="ss of day 1" width="100%">
     
 </body>
 </html>
