@@ -1,4 +1,23 @@
 
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ss of day3 project</title>
+</head>
+
+<body>
+    <h1>This is day 3 project </h1>
+    <img src="ss_d3.png" alt="ss of day 3" width="100%">
+    
+</body>
+</html>
+
+
+
+
 web Form--
 
 👉1--<form> Tag - Defining a Form:
