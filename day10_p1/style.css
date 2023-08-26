@@ -1,0 +1,42 @@
+/* Styling for links when hovered - making them brown and removing underlines */
+a:hover {
+    color: brown; /* Change link color to brown */
+    text-decoration: none; /* Remove underlines when hovering */
+}
+
+/* Styling for elements with class "alok" inside <h2> + <p> within the body */
+body h2 + p .alok {
+    color: rgb(51, 231, 57); /* Change text color to a shade of green */
+    background-color: rgb(0, 0, 0); /* Set background color to black */
+    padding: 10px; /* Add padding around the element */
+}
+
+/* Styling for an element with ID "siju" */
+#siju {
+    color: rgb(149, 3, 3); /* Change text color to a shade of red */
+    background-color: bisque; /* Set background color to a light brown */
+}
+
+/* Styling for <p> element with ID "ramu" */
+p#ramu {
+    color: rgb(53, 255, 73); /* Change text color to a shade of green */
+    background-color: rgb(99, 13, 179); /* Set background color to a shade of purple */
+}
+
+/* Styling for <li> elements with any class attribute */
+li[class] {
+    color: chocolate; /* Change text color to a shade of brown */
+    font-size: 200%; /* Increase font size to 200% */
+}
+
+/* Styling for <li> elements with class attribute containing "two" */
+li[class="two"] {
+    color: chartreuse; /* Change text color to chartreuse (a shade of green) */
+}
+
+/* Styling for <li> elements with class attribute containing "a" */
+li[class~="a"] {
+    color: darkseagreen; /* Change text color to a shade of green */
+    border: 4px; /* Add a 4px border */
+    margin: 30px; /* Add a margin of 30px around the element */
+}
