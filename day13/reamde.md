@@ -7,7 +7,7 @@
 
 <body>
     <h1>This is day 1 project </h1>
-    <img src="ss_d13.png" alt="ss of day 1" width="100%">
+    <img src="ss_day13-1.png" alt="ss of day 1" width="100%">
     
 </body>
 </html>
