@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Styling for the container of boxes */
+  .container {
+    display: flex; /* Use flex display for the container */
+    flex-wrap: wrap; /* Allow boxes to wrap to new lines when needed */
+    transition: flex-basis 0.1s ease; /* Smoothly transition box sizes */
+    margin: -5px; /* Compensate for the margin by using negative margin on container */
+  }
+  
+  /* Styling for individual boxes */
+  .box {
+    flex-basis: 24%; /* Initially, each box takes 25% of container width */
+    height: 100px;
+    border: 1px solid black;
+    display: flex; /* Use flex display for content alignment */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    box-sizing: border-box; /* Include borders in the box size */
+    margin: 5px; /* Add margin around each box */
+    
+  }
+
+  /* Media query for screens up to 800px wide */
+  @media (max-width: 800px) {
+    .box {
+      flex-basis: 50%; /* On smaller screens, each box takes 50% of container width */
+    }
+  }
+
+  /* Media query for screens up to 1200px wide */
+  @media (max-width: 1200px) {
+    .box {
+      flex-basis: 33.33%; /* For larger screens, each box takes 33.33% of container width */
+    }
+  }
+
+  /* Media query for screens up to 600px wide */
+  @media (max-width: 600px) {
+    .box {
+      flex-basis: 100%; /* On even smaller screens, each box takes 100% of container width */
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Container holding the boxes -->
+<div class="container">
+  <!-- Individual boxes -->
+  <div class="box">Hi Amit</div>
+  <div class="box">Hi Amit</div>
+  <div class="box">Hi Amit</div>
+  <div class="box">Hi Amit</div>
+</div>
+
+</body>
+</html>
