@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Reset some default styling */
+  body {
+    margin: 0;
+    padding-top: 100px;
+  }
+
+  /* Create a flex container with wrapping */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  /* Style for each box */
+  .box {
+    width: calc(25% - 20px);
+    height: 200px;
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Align content horizontally */
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+    border: 1px solid rgb(255, 255, 255);
+    display: flex; /* Add display flex for centering */
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  /* Background colors for different boxes */
+  .box:nth-child(1) {
+    background-color: rgb(0, 156, 208);
+  }
+
+  .box:nth-child(2) {
+    background-color: rgb(0, 162, 0);
+  }
+
+  .box:nth-child(3) {
+    background-color: rgb(255, 77, 42);
+  }
+
+  .box:nth-child(4) {
+    background-color: rgb(210, 186, 0);
+  }
+
+  /* Add hover effect */
+  .box:hover {
+    transform: scale(1.2); /* Slightly increase size on hover */
+  }
+
+  /* Media query for smaller screens (max-width: 1200px) */
+  @media (max-width: 1200px) {
+    .box {
+      width: calc(50% - 20px); /* Boxes take up 50% of the width, forming 2 columns */
+    }
+  }
+
+  /* Media query for even smaller screens (max-width: 600px) */
+  @media (max-width: 600px) {
+    .box {
+      width: 100%; /* Boxes take up the full width, stacking vertically */
+    }
+  }
+
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+  }
+</style>
+<title>Responsive Boxes</title>
+</head>
+
+
+
+
+<body>
+  <header>
+    <h1>Poems in Boxes</h1>
+  </header>
+
+  <div class="container" style="color: rgb(244, 244, 244);">
+    <div class="box">
+      <h2>Box 1</h2>
+      <p>A gentle breeze, the sky so blue,<br>Whispering leaves, a morning dew.<br>Quiet moments, nature's grace,<br>Every day is a fresh embrace.</p>
+    </div>
+    <div class="box">
+      <h2>Box 2</h2>
+      <p>In fields of green, where flowers bloom,<br>Amidst the sun, dispelling gloom.<br>A world of life, both near and far,<br>Nature's beauty, like a shining star.</p>
+    </div>
+    <div class="box">
+      <h2>Box 3</h2>
+      <p>Stormy skies, a tempest's dance,<br>Chaos meets a wild expanse.<br>Yet through it all, life finds a way,<br>Resilience in night and day.</p>
+    </div>
+    <div class="box">
+      <h2>Box 4</h2>
+      <p>Underneath a moonlit sky,<br>Dreams take flight, as time goes by.<br>Stars above, a cosmic sea,<br>Weaving tales of what could be.</p>
+    </div>
+  </div>
+
+  <div class=" center">
+
+    
+
+  </div>
+
+  <footer>
+    <p>This page showcases responsive boxes with poems. Each box changes size and style based on the screen size using CSS media queries. Hovering over a box triggers a subtle scaling animation.</p>
+  </footer>
+</body>
+</html>
