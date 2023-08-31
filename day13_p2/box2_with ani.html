@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .box {
+    width: calc(100% / 4);
+    height: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out; /* Add transition for smooth changes */
+  }
+
+  .box:nth-child(1) {
+    background-color: rgb(153, 229, 255);
+  }
+
+  .box:nth-child(2) {
+    background-color: rgb(105, 206, 184);
+  }
+
+  .box:nth-child(3) {
+    background-color: rgb(111, 206, 202);
+  }
+
+  .box:nth-child(4) {
+    background-color: rgb(66, 162, 151);
+  }
+
+  @media (max-width: 1200px) {
+    .box {
+      width: calc(100% / 2);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .box {
+      width: 100%;
+    }
+  }
+</style>
+<title>Responsive Boxes</title>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</body>
+</html>
