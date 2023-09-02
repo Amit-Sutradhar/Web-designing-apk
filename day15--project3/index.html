@@ -1,0 +1,249 @@
+
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Reset some default styling */
+  body {
+    margin: 0;
+    padding-top: 0px;
+  }
+
+  /* Create a flex container with wrapping */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  /* Style for each box */
+  .box {
+    width: calc(25% - 20px);
+    height: 200px;
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Align content horizontally */
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+    border: 1px solid rgb(255, 255, 255);
+    display: flex; /* Add display flex for centering */
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  /* Background colors for different boxes */
+  .box:nth-child(1) {
+    background-color: rgb(0, 156, 208);
+  }
+
+  .box:nth-child(2) {
+    background-color: rgb(0, 162, 0);
+  }
+
+  .box:nth-child(3) {
+    background-color: rgb(255, 77, 42);
+  }
+
+  .box:nth-child(4) {
+    background-color: rgb(210, 186, 0);
+  }
+
+  /* Add hover effect */
+  .box:hover {
+    transform: scale(1.2); /* Slightly increase size on hover */
+  }
+
+  /* Media query for smaller screens (max-width: 1200px) */
+  @media (max-width: 1200px) {
+    .box {
+      width: calc(50% - 20px); /* Boxes take up 50% of the width, forming 2 columns */
+    }
+  }
+
+  /* Media query for even smaller screens (max-width: 600px) */
+  @media (max-width: 600px) {
+    .box {
+      width: 100%; /* Boxes take up the full width, stacking vertically */
+    }
+  }
+
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+  }
+
+  .my_box1{
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+  }
+
+
+
+#pic {
+    float: left; /* Floats the image to the right of the surrounding content */
+    margin: 15px; /* Adds margin around the image */
+    max-width: 230px;
+    width: 25%; /* Sets the width of the image */
+    height: auto; /* Maintains the aspect ratio of the image */
+    background-color: rgb(181, 236, 234); /* Background color of the image container */
+    border: 5px solid rgb(202, 202, 202); /* Border around the image container */
+    padding: 0.5cm; /* Padding inside the image container */
+}
+
+/* Styling for the heading */
+.h1_box {
+    background-color: rgb(153, 153, 239); /* Background color of the heading */
+    padding: 15px; /* Padding around the heading */
+    color: rgb(255, 255, 255); /* Text color of the heading */
+}
+
+/* Clearing the float after the paragraphs */
+.para_2 {
+    clear: right; /* Clears the right float after this paragraph */
+}
+   
+   
+
+
+
+
+
+ 
+.my_box2{
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+  }
+
+
+
+#pic2 {
+    float: right; /* Floats the image to the right of the surrounding content */
+    margin: 10px; /* Adds margin around the image */
+    width: 25%; /* Sets the width of the image */
+    max-width: 230px;
+    height: auto; /* Maintains the aspect ratio of the image */
+    background-color: rgb(181, 236, 234); /* Background color of the image container */
+    border: 5px solid rgb(202, 202, 202); /* Border around the image container */
+    padding: 0.5cm; /* Padding inside the image container */
+}
+
+/* Styling for the heading */
+.h1_box2 {
+    background-color: rgb(153, 153, 239); /* Background color of the heading */
+    padding: 15px; /* Padding around the heading */
+    color: rgb(255, 255, 255); /* Text color of the heading */
+}
+
+/* Clearing the float after the paragraphs */
+.para_2_1 {
+    clear: right; /* Clears the right float after this paragraph */
+}  
+
+
+
+
+
+
+
+
+#office_pic{width: 50%;}
+</style>
+<title>Boxes</title>
+</head>
+
+
+
+
+<body>
+  <header>
+    <h1>open Boxes</h1>
+    <img id="office_pic" src="office group.jpg" alt="">
+  </header>
+
+  <div class="container" style="color: rgb(244, 244, 244);">
+    <div class="box">
+      <h2>Box 1</h2>
+      <p>A gentle breeze, the sky so blue,<br>Whispering leaves, a morning dew.<br>Quiet moments, nature's grace,<br>Every day is a fresh embrace.</p>
+    </div>
+    <div class="box">
+      <h2>Box 2</h2>
+      <p>In fields of green, where flowers bloom,<br>Amidst the sun, dispelling gloom.<br>A world of life, both near and far,<br>Nature's beauty, like a shining star.</p>
+    </div>
+    <div class="box">
+      <h2>Box 3</h2>
+      <p>Stormy skies, a tempest's dance,<br>Chaos meets a wild expanse.<br>Yet through it all, life finds a way,<br>Resilience in night and day.</p>
+    </div>
+    <div class="box">
+      <h2>Box 4</h2>
+      <p>Underneath a moonlit sky,<br>Dreams take flight, as time goes by.<br>Stars above, a cosmic sea,<br>Weaving tales of what could be.</p>
+    </div>
+  </div>
+
+
+
+<div class="my_box1">
+  <!-- Content of the webpage -->
+  <h1>Day 15</h1>
+
+  <img id="pic" src="bike ride.jpg" alt="">
+ 
+  <h2 class="h1_box">resume</h2>
+ 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, dolores modi distinctio praesentium facilis numquam, commodi esse culpa sequi minus temporibus accusamus deleniti cupiditate excepturi! Quisquam numquam magni nemo. Consequuntur.elit...</p>
+ 
+  <p class="para_2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero reprehenderit, fuga at repudiandae aut est nam corporis assumenda laborum deserunt sint quasi sequi suscipit odit. Odit vero illum accusamus, repellendus ea porro modi error alias ad veniam, minus, rem ratione iste veritatis tempora nihil eius hic officia similique a officiis quos sapiente nam explicabo. Earum harum dolore commodi. Aliquid modi ipsum recusandae? Consequuntur, nesciunt nulla adipisci laudantium voluptate aliquid incidunt ipsam repellat facere blanditiis odit, sit architecto expedita placeat perferendis, corrupti distinctio tempora aliquam provident deserunt! Ullam rerum nulla natus quo eaque neque voluptates voluptatibus aut quam molestias hic exercitationem optio ea ducimus, obcaecati rem ipsa quis perspiciatis quibusdam sed recusandae necessitatibus non? Aliquam accusamus alias perferendis? Voluptatum, qui? At enim blanditiis modi provident repellendus accusantium temporibus tempora itaque repudiandae est, unde repellat sed rerum incidunt a mollitia ratione eius nemo cum architecto distinctio! Impedit minima eos repudiandae nostrum dolore.</p>
+ 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+ 
+ 
+</div> 
+
+
+<div class="my_box2">
+  <!-- Content of the webpage -->
+  <h1>Day 15</h1>
+
+  <img id="pic2" src="bike ride.jpg" alt="">
+ 
+  <h2 class="h1_box2">resume</h2>
+ 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, dolores modi distinctio praesentium facilis numquam, commodi esse culpa sequi minus temporibus accusamus deleniti cupiditate excepturi! Quisquam numquam magni nemo. Consequuntur.elit...</p>
+ 
+  <p class="para_2_1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores consectetur quasi voluptas aliquam, distinctio voluptate accusamus vel nam repudiandae cupiditate placeat tenetur aspernatur deserunt modi aliquid ex perspiciatis officiis accusantium dolorum eaque natus alias voluptatibus! Quia, quasi perferendis deleniti pariatur sunt nisi dolores sit natus velit doloribus amet ea repellendus? Harum, reiciendis sunt. Repellendus soluta magni accusantium quisquam ullam id, sequi unde vel quos doloribus laudantium quia at? Error voluptates laboriosam sequi sint consequatur ea ex eos, aspernatur molestias eveniet voluptate consectetur neque laborum quo laudantium architecto. Delectus tempora consequatur deserunt veniam quisquam commodi repellendus recusandae non? Id illum vitae soluta, et, asperiores laborum ipsam perspiciatis nihil vero minus, deleniti quod exercitationem. Nesciunt unde id commodi error officia ab dolorem enim recusandae laudantium quasi beatae esse atque aut deleniti a maxime, consequatur incidunt ullam doloremque debitis molestiae illo adipisci? Optio minima cum nam odit consequuntur accusamus id numquam minus quo!</p>
+ 
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+ 
+ 
+ 
+ 
+</div> 
+
+
+
+
+ 
+</div> 
+
+
+  <footer>
+    <p>This page showcases responsive boxes with poems. Each box changes size and style based on the screen size using CSS media queries. Hovering over a box triggers a subtle scaling animation.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
