@@ -2,7 +2,7 @@
 
 day1 
 
-#-------------Day1-------------
+#-------------Day1--------------
 
 1--Document Type Declaration: <!DOCTYPE html> indicates that the document is written in HTML5.
 
