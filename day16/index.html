@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        /* Head Section */
+
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+         margin: 0px;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+
+        header {
+            background-color: rgb(254, 235, 86);
+            padding: 30px;
+            height: 400pxpx;
+            width: 100%;
+            text-align: center;
+        }
+    
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 30px;
+            width: 100%;
+            height: auto;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    
+        nav li {
+            display: inline;
+            margin-right: 60px;
+        }
+    
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s; /* Add a smooth color transition effect */
+        }
+    
+        /* Add a hover effect */
+        nav a:hover {
+            color: pink; /* Change the color on hover */
+        }
+    
+        /* Body Section */
+        .user-introduction {
+            margin-top: 50px; /* To create space below the fixed header and sticky nav */
+            padding: 70px;
+            text-align: justify;
+        }
+    
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+
+
+        /* Style the form container */
+            .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Style form elements */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style the submit button */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Style the submit button on hover */
+        input[type="submit"]:hover {
+            background-color: #004c8e;
+            transform: scale(1.05); /* Scale up on hover */
+        }
+
+
+
+    </style>
+    
+</head>
+<body>
+    <!-- Head Section -->
+    <header>
+        <h1>Hello, Welcome to Our Website</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">Vlogs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Body Section -->
+    <div class="user-introduction">
+        <h2>User Introduction</h2>
+        <p>Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maxime, error possimus enim et, at defficia esse sequi. Officiis velit reiciendis suscipit asperiores facilis, illo quae provident corrupti Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatem molestiae rerum. Quo at fuga eos numquam earum! Dolore ipsa assumenda excepturi dolorum id error, reiciendis provident iusto corrupti suscipit libero. Doloribus minus harum itaque tempore, aut nisi laboriosam quo eius, aliquam odio porro autem esse veritatis qui perferendis consequatur repellendus praesentium reprehenderit quidem. Temporibus sed, magnam laudantium sapiente unde omnis architecto dolorum sequi sit perferendis pariatur minus exercitationem hic voluptates eveniet nulla cumque. Asperiores id eos in ullam fugiat amet voluptate perferendis nisi perspiciatis maxime! Earum commodi id explicabo voluptates, perferendis eaque! Voluptatem, ab repellat facilis quam expedita eius qui quaerat, optio nam rerum temporibus necessitatibus placeat animi doloremque hic exercitationem aliquid eaque distinctio quibusdam quisquam. Non in deleniti ut aspernatur accusamus illum nam ea, fuga, assumenda earum ad maxime sunt dolore, voluptas natus repudiandae ipsam quidem veritatis eveniet quisquam possimus optio commodi voluptatum quas. Praesentium dolorum soluta totam, molestiae accusantium eveniet illum aliquid, quam velit omnis maiores mollitia. Laborum placeat eligendi quam, animi id itaque officiis sequi nobis veniam consectetur nisi repudiandae fugit sint in inventore earum perferendis quod aliquid ipsam quos! Nobis quis ullam quod asperiores, possimus illum saepe harum tempora nulla iure omnis, unde provident, distinctio eligendi ratione rerum ipsum veniam totam molestiae. Consectetur, eos. Officia esse soluta repellendus odio ullam mollitia est, recusandae nemo aliquam? Cupiditate, consequuntur repellat pariatur amet possimus quibusdam ipsam ad cumque quia rem quam repellendus tenetur vero eos ab. Consectetur tempore at, totam optio maiores ab inventore tenetur laudantium eius fugit, quidem, aperiam debitis facere aliquid exercitationem. Aperiam consectetur non, architecto voluptatibus at modi unde illum aut odit velit quos veritatis quia nam eaque facere, necessitatibus nemo consequatur, assumenda molestias? Excepturi dignissimos ut mollitia iste iure ipsa, esse recusandae enim aliquid culpa perspiciatis fugit cum autem minus exercitationem, explicabo pariatur repellat? sapiente, commodi in optio hic laborum..</p>
+    </div>
+
+
+
+    <div class="container">
+        <h2>User Introduction Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="introduction">Introduction:</label>
+            <textarea id="introduction" name="introduction" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2023 Your Website Name
+    </footer>
+</body>
+</html>
