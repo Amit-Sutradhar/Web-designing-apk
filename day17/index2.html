@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Introduction Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .user-box {
+            width: 200px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .user-info-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Introduction Website</h1>
+    <div class="container">
+        <div class="user-info-form">
+            <h2>User Information Form</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio:</label>
+                <input type="text" id="bio" placeholder="Enter your bio">
+            </div>
+            <button>Submit</button>
+        </div>
+        
+        <div class="user-box">User 1</div>
+        <div class="user-box">User 2</div>
+        <div class="user-box">User 3</div>
+        <div class="user-box">User 4</div>
+        <div class="user-box">User 5</div>
+    </div>
+</body>
+</html>

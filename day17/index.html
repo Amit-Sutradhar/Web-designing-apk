@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Introduction Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url(train-pic.jpg);
+
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center top;
+
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .user-box {
+            width: 200px;
+            padding: 20px;
+            flex-wrap: wrap;/*-----------*/
+            background-color: #38ffdb4e;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.421);
+            color: white;
+            font-style: italic;
+        }
+
+        .user-info-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffffe3;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #f86c6c7d;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* New container for user boxes with pink background */
+        .user-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px;
+            background-color: rgba(255, 255, 255, 0.359); /* Pink background color */
+            padding: 10px; /* Optional padding for spacing */
+            border-radius: 50px; /* Optional border radius */
+        }
+
+        :hover.user-box{ 
+            background-color: #268fff; /* Change color on hover */
+            }
+
+        .para{
+            color: white;
+            padding: 60px;
+            text-align: justify;
+            background-color: rgba(0, 0, 0, 0.391);
+            border: 40px;
+            margin: 30px;}
+
+
+
+
+
+
+         
+            
+
+
+
+        /* Your existing CSS styles here */
+
+        /* Side menu styles */
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: -250px; /* Start hidden off-screen */
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            transition: left 0.3s ease-in-out;
+            z-index: 999;
+        }
+
+        .side-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .side-menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Introduction Website</h1>
+    <div class="container">
+        <div class="user-info-form">
+            <h2>User Information Form</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio:</label>
+                <input type="text" id="bio" placeholder="Enter your bio">
+            </div>
+            <button>Submit</button>
+        </div>
+        <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus, voluptates molestiae earum, itaque iste officia, consectetur nostrum voluptate illum dolores. Ratione, illo perferendis iure perspiciatis dicta blanditiis magnam modi odit voluptatum doloribus a hic. Deleniti possimus architecto facilis cumque nisi quibusdam sequi. Repellendus quia cupiditate facere autem, nobis placeat fuga? Nihil alias autem error ea enim beatae, rem nulla animi voluptates voluptate eius perspiciatis nostrutetur iste cum, corporis ipsum molestias! Accusamus omnis nobis beatae accusantium ea necessitatibus deserunt blanditiis placeat vel itaque consequatur, ipsum doloremque temporibus natus rem laudantium voluptas odit ex, fugit illum iusto! Exercitationem quaerat deleniti doloribus, assumenda expedita veritatis dicta debitis!</p>
+        </div>
+       
+        <div class="user-container">
+            <div class="user-box">User 1</div>
+            <div class="user-box">User 2</div>
+            <div class="user-box">User 3</div>
+            <div class="user-box">User 4</div>
+            <div class="user-box">User 5</div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="side-menu">hi
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Position</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Vlog Window</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content" id="main-content">
+        <!-- Your main content here -->
+       
+    </div>
+
+
+</body>
+
+
+<script>
+    // JavaScript to toggle the side menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const sideMenu = document.getElementById('side-menu');
+    const mainContent = document.getElementById('main-content');
+    const sideMenuLinks = document.querySelectorAll('.side-menu a');
+
+    menuToggle.addEventListener('click', () => {
+        if (sideMenu.style.left === '-250px' || sideMenu.style.left === '') {
+            sideMenu.style.left = '0';
+        } else {
+            sideMenu.style.left = '-250px';
+        }
+    });
+
+    // Close the side menu when clicking on the main content area
+    mainContent.addEventListener('click', () => {
+        if (sideMenu.style.left === '0') {
+            sideMenu.style.left = '-250px';
+        }
+    });
+
+    // Close the side menu when clicking on a link inside the side menu
+    sideMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            sideMenu.style.left = '-250px';
+        });
+    });
+</script>
+</html>
