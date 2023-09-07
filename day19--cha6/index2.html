@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Reset some default styling */
+      body {
+        margin: 0;
+        padding-top: 100px;
+      }
+
+      /* Create a flex container with wrapping */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 40px;
+      }
+
+      /* Style for each box-----calc */
+      .box {
+        width: calc(25% - 20px);
+        height: 400px;
+        align-items: center; /* Align content vertically */
+        justify-content: center; /* Align content horizontally */
+        box-sizing: border-box;
+        transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+        border: 1px solid rgb(255, 255, 255);
+        display: flex; /* Add display flex for centering */
+        font-size: 100%;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        padding: 0px;
+
+        flex-direction: column; /* Arrange child elements vertically */
+      }
+
+      /* Background colors for different boxes */
+      .box:nth-child(1) {
+        background-color: rgb(0, 156, 208);
+      }
+
+      .box:nth-child(2) {
+        background-color: rgb(0, 162, 0);
+      }
+
+      .box:nth-child(3) {
+        background-color: rgb(255, 77, 42);
+      }
+
+      .box:nth-child(4) {
+        background-color: rgb(210, 186, 0);
+      }
+
+      /* Add hover effect */
+      .box:hover {
+        transform: scale(1.2); /* Slightly increase size on hover */
+        background-color: rgb(
+          208,
+          187,
+          255
+        ); /* Darken the background color on hover */
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); /* Enhance box shadow on hover */
+      }
+
+      /* Media query for smaller screens (max-width: 1200px) */
+      @media (max-width: 1200px) {
+        .box {
+          width: calc(
+            50% - 20px
+          ); /* Boxes take up 50% of the width, forming 2 columns */
+        }
+      }
+
+      /* Media query for even smaller screens (max-width: 600px) */
+      @media (max-width: 600px) {
+        .box {
+          width: 100%; /* Boxes take up the full width, stacking vertically */
+        }
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: lightgray;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: lightgray;
+      }
+
+      .center {
+        color: rgb(63, 63, 63);
+        margin: 0px;
+        padding: 30px;
+        border: 50px solid rgb(255, 255, 255);
+        background-color: rgb(203, 203, 203);
+      }
+
+      .box img {
+        width: calc(65% - 20px);
+        padding-top: 10px;
+        height: auto;
+        align-items: center; /* Align the image to the top */
+      }
+
+      .box p {
+        padding: 10px;
+        flex: auto;
+      }
+    </style>
+    <title>Responsive Boxes</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Poems in Boxes</h1>
+    </header>
+
+    <div class="container" style="color: rgb(244, 244, 244)">
+      <div class="box">
+        <img src="pic/img5.jpg" alt="pic" />
+
+        <h2>Box 1</h2>
+        <p>
+          A gentle breeze, the sky so blue, Whispering leaves, a morning dew.
+          Quiet moments, nature's grace, Every day is a fresh embrace.
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="pic/img2.jpg" alt="" />
+        <h2>Box 2</h2>
+        <p>
+          In fields of green, where flowers bloom, Amidst the sun, dispelling
+          gloom, A world of life, both near and far, Nature's beauty, like a
+          shining star.
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="pic/img3.jpg" alt="" />
+        <h2>Box 3</h2>
+        <p>
+          Stormy skies, a tempest's dance,Chaos meets a wild expanse.Yet through
+          it all, life finds a way,Resilience in night and day.
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="pic/img4.jpg" alt="" />
+        <h2>Box 4</h2>
+        <p>
+          Underneath a moonlit sky Dreams take flight, as time goes by. Stars
+          above, a cosmic sea, Weaving tales of what could be.
+        </p>
+      </div>
+    </div>
+
+    <div class="center">
+      <h2>hlw bro welcome to center part</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+        veniam a nostrum tenetur delectus maxime quod iusto itaque, corporis
+        illum dolorum. Nemo incidunt doloribus sint. Veniam molestiae, possimus
+        quod reprehenderit nobis tempora harum officia exercitationem laudantium
+        voluptates necessitatibus ipsa illum nihil sequi, fugit neque maiores
+        tempore minus nulla eos dolore tenetur reiciendis, esse earum. Adipisci
+        iusto autem fuga aspernatur, quasi nostrum error quisquam perspiciatis
+        corrupti distinctio ea dolorem fugit recusandae repellendus amet,
+        doloribus tempore vitae! Saepe ratione aspernatur minima architecto
+        expedita, rerum velit sit asperiores nesciunt ipsam blanditiis similique
+        consequuntur, accusamus hic, delectus aperiam facere praesentium nisi
+        obcaecati rem! Error.
+      </p>
+    </div>
+
+    <footer>
+      <p>
+        This page showcases responsive boxes with poems. Each box changes size
+        and style based on the screen size using CSS media queries. Hovering
+        over a box triggers a subtle scaling animation.
+      </p>
+    </footer>
+  </body>
+</html>
